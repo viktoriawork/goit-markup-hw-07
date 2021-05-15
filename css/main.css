@@ -272,6 +272,7 @@ img {
 }
 
 .main__main-button {
+  height: 200px;
   height: 50px;
   margin-left: auto;
   margin-right: auto;
