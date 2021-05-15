@@ -1,0 +1,19 @@
+.modal__form-checkbox:checked
+  + .user-agree-policy
+  .user-agree-policy__icon-agree {
+  opacity: 1;
+  background-color: var(--c-accent-color);
+}
+
+.modal__form-checkbox:checked
+  + .user-agree-policy
+  .user-agree-policy__check-wrap {
+  outline: var(--accent-color);
+}
+
+.modal__form-checkbox:focus
+  + .user-agree-policy
+  .user-agree-policy__check-wrap {
+  
+  outline: 3px solid black;
+}

@@ -1,0 +1,37 @@
+:root {
+    --txt-title-color: #212121;
+    --txt-nav-color: #000;
+    --txt-main-color: #757575;
+    --c-footer-color: #2f303a;
+    --c-accent-color: #2196f3;
+    --c-background-color: #fff;
+    --c-banner-color: #2f303a;
+    --c-white-color: #fff;
+    --txt-titile-white-color:#fff;
+    --txt-button-color:#fff;
+    --txt-title2-color: #212121;
+    --txt-color: #212121;
+    --join-icon-color: rgb(255, 255, 255, 0.1);
+  } 
+  .body {
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.03em;
+    font-size: 16px;
+    line-height: 1.18;
+    color: var(--txt-main-color);
+    font-weight: 500;
+  }
+  .section-pos {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .title {
+    font-weight: 700;
+    color: #212121;
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.16;
+    color: var(--txt-title-color);
+    margin-bottom: 50px;
+    text-align: center;
+  }
