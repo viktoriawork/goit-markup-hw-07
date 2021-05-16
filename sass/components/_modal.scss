@@ -177,6 +177,10 @@
 
   color: #757575;
 
+  &__link{
+    color: var(--c-accent-color);
+  }
+
   &__check-wrap {
     display: inline-block;
 

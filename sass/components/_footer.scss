@@ -104,23 +104,26 @@
   
   .footer-subscribe-form {
     display: flex;
-  position: relative;
+    position: relative;
     align-items: center;
     flex-basis: calc((100% - 30px) / 2 );
+
+    &__subscribe-input {
+      width: 358px;
+      height: 50px;
+    
+      padding-left: 16px;
+      margin-right: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      border-radius: 4px;
+    
+      color:var(--txt-color);
+      background-color: inherit;
+    }
+
   }
-  .footer-subscribe-form__subscribe-input {
-    width: 358px;
-    height: 50px;
   
-    padding-left: 16px;
-    margin-right: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-  
-    color:var(--txt-color);
-    background-color: inherit;
-  }
   .footer-subscribe-form__subscribe-input::placeholder {
     color: rgba(255, 255, 255, 0.6);
   }
