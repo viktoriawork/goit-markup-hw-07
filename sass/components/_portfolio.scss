@@ -21,6 +21,7 @@
   margin-top: -30px;
 }
 .portfolio__item {
+  position: relative;
   flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
   margin-top: 30px;
@@ -61,7 +62,7 @@
   transform: translate(-50%, 50%);
   position: absolute;
   text-align:left;
-  background-color: var(--c-accent-color);
+  background-color: var(--portfolio-card-color);
   color:white;
   padding: 63px 24px;
   font-weight: normal;
@@ -71,10 +72,14 @@ visibility: hidden;
   letter-spacing: 0.03em;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio__item:hover .portfolio__card-description,
 .portfolio__item:focus .portfolio__card-description{
   overflow: visible;
   visibility: visible;
   transform: translate(-50%, -50%);
   
+}
+.portfolio__item:hover .portfolio__card-description{
+  overflow: visible;
+  visibility: visible;
+  transform: translate(-50%, -50%);
 }

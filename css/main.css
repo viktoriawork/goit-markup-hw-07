@@ -56,6 +56,7 @@ img {
   --txt-title2-color: #212121;
   --txt-color: #212121;
   --join-icon-color: rgb(255, 255, 255, 0.1);
+  --portfolio-card-color: rgba(33, 150, 243, 0.9);
 }
 
 .body {
@@ -148,13 +149,24 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.menu .menu__studio.menu__studio--current::after {
+  position: absolute;
+  content: '';
+  display: block;
+  background-color: var(--c-accent-color);
+  height: 4px;
+  width: 100%;
+  bottom: 0;
+  border-radius: 2px;
+}
+
 .menu .menu__portfolio.menu__portfolio--current {
   position: relative;
   color: var(--c-accent-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu .menu__studio.menu__studio--current::after {
+.menu .menu__portfolio.menu__portfolio--current::after {
   position: absolute;
   content: '';
   display: block;
@@ -208,7 +220,7 @@ img {
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
-  /* letter-spacing: 0.03em; */
+  padding-top: 13px;
 }
 
 .weblogo {
@@ -272,7 +284,7 @@ img {
 }
 
 .main__main-button {
-  height: 200px;
+  width: 200px;
   height: 50px;
   margin-left: auto;
   margin-right: auto;
@@ -745,6 +757,7 @@ img {
 }
 
 .portfolio__item {
+  position: relative;
   flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
   margin-top: 30px;
@@ -789,7 +802,7 @@ img {
   transform: translate(-50%, 50%);
   position: absolute;
   text-align: left;
-  background-color: var(--c-accent-color);
+  background-color: var(--portfolio-card-color);
   color: white;
   padding: 63px 24px;
   font-weight: normal;
@@ -800,8 +813,13 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio__item:hover .portfolio__card-description,
 .portfolio__item:focus .portfolio__card-description {
+  overflow: visible;
+  visibility: visible;
+  transform: translate(-50%, -50%);
+}
+
+.portfolio__item:hover .portfolio__card-description {
   overflow: visible;
   visibility: visible;
   transform: translate(-50%, -50%);
