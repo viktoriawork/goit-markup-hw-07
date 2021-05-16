@@ -861,6 +861,8 @@ img {
 + .user-agree-policy
 .user-agree-policy__check-wrap {
   outline: 3px solid black;
+  opacity: 1;
+  background-color: var(--c-accent-color);
 }
 
 .modal {
